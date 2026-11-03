@@ -1,0 +1,11 @@
+# Local virtual machine images
+unidad-5/post1-u5/*.vdi
+unidad-5/post1-u5/*.vmdk
+unidad-5/post1-u5/*.ova
+unidad-5/post1-u5/*.iso
+unidad-5/post1-u5/*.sav
+unidad-5/post1-u5/bin/*.txt
+
+# Local tool and build output
+Thumbs.db
+Desktop.ini
