@@ -2,7 +2,7 @@
 
 **Arquitectura de Computadores · Unidad 5**  
 **Estudiante:** González López  
-**Repositorio:** [TrabajosArqui](https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-5/post1-u5)
+**Repositorio:** [TrabajosArqui](https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-5/post5-u5)
 
 > **Estado:** se prepararon el código NASM y la guía de ejecución. No se han inventado resultados, capturas, versiones de software ni una instalación de Alpine. Los resultados del host y las 16 capturas deben añadirse después de realizar los pasos marcados como pendientes.
 
@@ -13,7 +13,7 @@
 - [`dosbox.conf`](dosbox.conf): configuración base; revisar la ruta de montaje en cada equipo.
 - [`VBoxManage_commands.ps1`](VBoxManage_commands.ps1): comandos PowerShell de apoyo para el host Windows.
 - [`capturas/`](capturas/README.md): nombres y ubicación de las 16 evidencias requeridas.
-- [Gonzalez Lopez_Post5_U5.pdf](<Gonzalez Lopez_Post5_U5.pdf>): copia PDF de esta bitácora.
+- [Gonzalez Lopez_Post5_U5.pdf](https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-5/post5-u5/Gonzalez%20Lopez_Post5_U5.pdf): copia PDF de esta bitácora.
 
 Los ejecutables `.COM`, ISO de Alpine, discos virtuales y exportaciones OVA se generan localmente y no se versionan.
 
@@ -32,9 +32,9 @@ La actividad exige Alpine 3.19. Debe usarse solo en el laboratorio aislado: es u
 
 ### 1. Preparar y montar la carpeta
 
-Abrir PowerShell en la raíz de este repositorio y comprobar que existen `src`, `bin` y `capturas`. Crear `bin` si aún no existe. Editar en `dosbox.conf` la ruta absoluta de `mount c` para que apunte a esta carpeta `post1-u5`; la ruta de ejemplo corresponde al equipo donde se preparó la estructura. La sintaxis de DOSBox no acepta comentarios al final de una asignación, por eso los comentarios se dejan en líneas separadas.
+Abrir PowerShell en la raíz de este repositorio y comprobar que existen `src`, `bin` y `capturas`. Crear `bin` si aún no existe. Editar en `dosbox.conf` la ruta absoluta de `mount c` para que apunte a esta carpeta `post5-u5`; la ruta de ejemplo corresponde al equipo donde se preparó la estructura. La sintaxis de DOSBox no acepta comentarios al final de una asignación, por eso los comentarios se dejan en líneas separadas.
 
-Iniciar DOSBox con el archivo de configuración. Si `-conf` recibe una ruta relativa, ejecutar primero `dosbox.exe -conf "RUTA\A\post1-u5\dosbox.conf"` desde el host. En el prompt `C:\>` comprobar con `dir`, y ejecutar `nasm -v`. Si no se reconoce `nasm`, copiar el ejecutable DOS NASM provisto por el curso a esta carpeta y comprobar que esté en el PATH de DOSBox.
+Iniciar DOSBox con el archivo de configuración. Si `-conf` recibe una ruta relativa, ejecutar primero `dosbox.exe -conf "RUTA\A\post5-u5\dosbox.conf"` desde el host. En el prompt `C:\>` comprobar con `dir`, y ejecutar `nasm -v`. Si no se reconoce `nasm`, copiar el ejecutable DOS NASM provisto por el curso a esta carpeta y comprobar que esté en el PATH de DOSBox.
 
 ### 2. Ensamblar y ejecutar los programas
 
