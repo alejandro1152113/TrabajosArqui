@@ -2,7 +2,7 @@
 
 Repositorio de actividades organizadas por unidad:
 
-- [Unidad 3 — Post-contenido](unidad-3/post3-u3/README.md): laboratorio DEBUG/DOSBox, tablas de traza y lista de capturas pendientes.
+- [Unidad 3 — Post-contenido](unidad-3/post3-u3/README.md): laboratorio DEBUG/DOSBox, tablas de traza y capturas reales.
 - [Unidad 5 — Pre-contenido](<unidad-5/pre5-u5/Gonzalez Lopez_Pre5_U5.pdf>): respuestas teóricas en PDF.
 - [Unidad 5 — Post-contenido](https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-5/post5-u5): laboratorio DOSBox/NASM y VirtualBox/Alpine, con su [documentación PDF](https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-5/post5-u5/Gonzalez%20Lopez_Post5_U5.pdf).
 - [Unidad 6 — Post-contenido](unidad-6/post6-u6/README.md): laboratorio NASM/DOSBox y [PDF](<unidad-6/post6-u6/Gonzalez Lopez_Post6_U6.pdf>).

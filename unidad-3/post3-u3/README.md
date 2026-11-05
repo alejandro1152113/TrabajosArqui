@@ -6,39 +6,39 @@
 
 ## Propósito y estado de la evidencia
 
-El laboratorio se divide en dos partes. La primera usa `R`, `F`, `D`, `E`, `A`, `U` y `T` para observar registros, memoria y codificación de instrucciones; la segunda ensambla y traza sumas, un bucle `LOOP` y su equivalente con `DEC/JNZ`. Las tablas de este documento expresan los estados que se derivan de las instrucciones y de sus resultados aritméticos. Los valores iniciales dependientes de la sesión, como el segmento asignado por DOS, deben transcribirse de la pantalla real y no inferirse de los ejemplos de la guía.
+El laboratorio se divide en dos partes. La primera usa `R`, `F`, `D`, `E`, `A`, `U` y `T` para observar registros, memoria y codificación de instrucciones; la segunda ensambla y traza sumas, un bucle `LOOP` y su equivalente con `DEC/JNZ`. Los resultados y las capturas incluidos se obtuvieron en una sesión real de DOSBox 0.74-3 con FreeDOS DEBUG, descargado del paquete oficial de [FreeDOS DEBUG](https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/repositories/1.3/base/debug.zip). En esta ejecución DOS asignó el segmento `0724`; otros equipos pueden mostrar valores diferentes.
 
-**Evidencia:** DOSBox 0.74-3 está instalado, pero no incluye `DEBUG`. No se atribuye a este entorno una ejecución de DEBUG ni se incluyen capturas simuladas. Para realizar el laboratorio, debe conseguirse `DEBUG.COM` desde el paquete oficial de [FreeDOS DEBUG](https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/repositories/1.3/base/debug.zip), extraerlo en la carpeta de trabajo y completar las capturas indicadas en [`capturas/README.md`](capturas/README.md). La salida y los registros de segmento pueden diferir según la versión de DEBUG y la sesión.
+**Evidencia:** las doce imágenes de [`capturas/`](capturas/README.md) son capturas directas de la ventana DOSBox durante la ejecución; no se recrearon las salidas. `DEBUG.COM` quedó instalado en `C:\DOSWork\L3P1` y `C:\DOSWork\L3P2` para estas pruebas.
 
 ## Preparación del entorno
 
-1. Se crea `C:\DOSWork\LAB3POST1` en Windows y se copia allí `DEBUG.COM`.
+1. Se crea `C:\DOSWork\L3P1` en Windows y se copia allí `DEBUG.COM` del paquete FreeDOS. `L3P1` y `L3P2` se mantienen dentro del límite de 8 caracteres de los nombres DOS.
 2. Se inicia DOSBox, se monta la carpeta de trabajo y se entra al laboratorio:
 
    ```text
    Z:\> MOUNT C C:\DOSWork
    Z:\> C:
-   C:\> CD LAB3POST1
-   C:\LAB3POST1> DEBUG
+   C:\> CD L3P1
+   C:\L3P1> DEBUG
    -
    ```
 
-3. La Parte 2 se realiza en otra carpeta, `C:\DOSWork\LAB3POST2`, con el mismo procedimiento. En los ejemplos, `1357` es un segmento ilustrativo; se debe usar el segmento que muestre la sesión.
+3. La Parte 2 se realiza en `C:\DOSWork\L3P2`, con el mismo procedimiento. En esta sesión el segmento fue `0724`; en otra ejecución se debe usar el segmento que muestre DEBUG.
 
 ## Parte 1 — Exploración, ensamblado y memoria
 
 ### Checkpoint 1 — Registros con R
 
-Desde el indicador `-`, `R` muestra los registros y las banderas. `R AX` permite cambiar AX: se escribe `1234` en la línea de entrada que presenta DEBUG y se vuelve a consultar con `R AX`. La guía muestra como ejemplo `SP=FFFE`, `IP=0100` y `DS=ES=SS=CS=1357`; estos valores no deben presentarse como una medición si no coinciden con la sesión real. Para la captura se conservan los valores efectivamente mostrados y se verifica que solo AX haya sido modificado por el segundo comando.
+Desde el indicador `-`, `R` muestra los registros y las banderas. En la captura real, los valores iniciales incluyen `SP=FFFE`, `IP=0100` y `DS=ES=SS=CS=0724`. `R AX` permite cambiar AX: se escribe `1234` en el indicador de edición y se vuelve a consultar `R AX`; la salida confirma `AX=1234`.
 
 ### Checkpoint 2 — Relleno y volcado de memoria con F y D
 
 ```text
--F 200 L40 AB CD EF
--D 200 L40
+-F 200 L 40 AB CD EF
+-D 200 23F
 ```
 
-`L40` representa 0x40, es decir, 64 bytes; el patrón `AB CD EF` se repite hasta llenar el rango desde `DS:0200`. En el volcado de DEBUG, la primera columna es la dirección de inicio de la fila (`segmento:desplazamiento`), el bloque central muestra los bytes en hexadecimal y la columna derecha representa esos mismos bytes como caracteres. Los bytes que no corresponden a caracteres ASCII imprimibles se muestran como puntos. Las cuatro filas de 16 bytes deben mostrar la repetición del patrón.
+En FreeDOS DEBUG, `L 40` especifica una longitud de 0x40, es decir, 64 bytes; por eso se separa `L` del valor. El patrón `AB CD EF` se repite desde `DS:0200`. El comando `D 200 23F` muestra el rango equivalente mediante sus direcciones inicial y final. En el volcado, la primera columna es la dirección de inicio de la fila (`segmento:desplazamiento`), el bloque central muestra los bytes en hexadecimal y la columna derecha representa esos mismos bytes como caracteres. Los bytes que no corresponden a caracteres ASCII imprimibles se muestran como puntos. La captura muestra las cuatro filas del patrón.
 
 La inspección complementaria del PSP se realiza con `D 0 L20`. Sus primeros bytes pueden incluir `CD 20`, la instrucción `INT 20` que DOS coloca en el comienzo del PSP; los demás datos del PSP dependen del entorno y no deben copiarse de un ejemplo como si fueran universales.
 
@@ -56,38 +56,38 @@ INT 20
 -U 100 109
 ```
 
-La correspondencia esperada es:
+La salida medida de FreeDOS DEBUG es:
 
 | Dirección | Bytes | Instrucción | Interpretación |
 |---|---|---|---|
 | `0100` | `B8 05 00` | `MOV AX,0005` | Opcode `B8` y valor inmediato `0005` en little-endian. |
 | `0103` | `BB 03 00` | `MOV BX,0003` | Opcode `BB` y valor inmediato `0003` en little-endian. |
-| `0106` | `03 C3` | `ADD AX,BX` | Suma el contenido de BX a AX. |
+| `0106` | `01 D8` | `ADD AX,BX` | Suma el contenido de BX a AX. |
 | `0108` | `CD 20` | `INT 20` | Termina el programa DOS. |
 
-El programa ocupa 10 bytes. El comando `U` permite comparar mnemónicos y bytes en memoria antes de ejecutar la primera instrucción.
+El programa ocupa 10 bytes. El DEBUG de Microsoft que ilustra la guía puede codificar `ADD AX,BX` como `03 C3`; el ensamblador de FreeDOS usado en esta ejecución escogió `01 D8`, otra codificación válida de la misma operación. `U` muestra los bytes efectivamente escritos en memoria, sin ejecutar el programa.
 
 ### Checkpoint 4 — Escritura, lectura y direccionamiento directo
 
 ```text
--F 300 L10 00
--D 300 L10
+-F 300 L 10 00
+-D 300 30F
 -E 300 78 56
--D 300 L10
+-D 300 30F
 -A 320
 MOV AX,[0300]
 INT 20
 -U 320 324
 -R IP
-:0320
+0320
 -T
 ```
 
-El primer volcado debe contener dieciséis ceros. Después de `E`, los dos primeros bytes son `78 56` y los catorce restantes continúan en cero. Como x86 almacena palabras en little-endian, esos bytes forman `5678h`. `U` debe mostrar `A1 00 03` para `MOV AX,[0300]`; al ejecutar esa instrucción con `T`, AX debe pasar a `5678h`. La lectura usa DS por defecto y no debe confundirse con `MOV AX,5678`, que cargaría un valor inmediato.
+La sesión muestra dieciséis ceros antes de `E`; después, los dos primeros bytes son `78 56` y los catorce restantes continúan en cero. Como x86 almacena palabras en little-endian, esos bytes forman `5678h`. `U` muestra `A1 00 03` para `MOV AX,[0300]`; al ejecutar esa instrucción con `T`, AX pasa a `5678h`. La lectura usa DS por defecto y no debe confundirse con `MOV AX,5678`, que cargaría un valor inmediato.
 
 ### Decisión técnica 1 — Verificación no destructiva de la memoria
 
-Para comprobar la escritura realizada con `E 300 78 56`, la decisión adecuada es usar `D 300 L10`, porque presenta el contenido del rango sin reemplazarlo. `E` escribe bytes: invocarlo sin una lista de valores abre la edición interactiva y deja la posibilidad de sobrescribir una ubicación al responder a los valores mostrados. `F` tampoco sirve para verificar, pues rellena un rango con un patrón y, por tanto, altera precisamente el estado que se desea inspeccionar. `R` muestra registros cuando se consulta sin seleccionar uno, pero no muestra el bloque de memoria; además, las variantes de `R` que seleccionan un registro permiten modificarlo. `D` es la opción de solo lectura entre los comandos disponibles para observar ese rango: permite confirmar `78 56` y los ceros restantes sin cambiar la memoria ni el estado de los registros. La captura debe mostrar el volcado posterior a la escritura, no una nueva operación de escritura.
+Para comprobar la escritura realizada con `E 300 78 56`, la decisión adecuada es usar `D 300 30F`, porque presenta el contenido del rango sin reemplazarlo. `E` escribe bytes: invocarlo sin una lista de valores abre la edición interactiva y deja la posibilidad de sobrescribir una ubicación al responder a los valores mostrados. `F` tampoco sirve para verificar, pues rellena un rango con un patrón y, por tanto, altera precisamente el estado que se desea inspeccionar. `R` muestra registros cuando se consulta sin seleccionar uno, pero no muestra el bloque de memoria; además, las variantes de `R` que seleccionan un registro permiten modificarlo. `D` es la opción de solo lectura entre los comandos disponibles para observar ese rango: permite confirmar `78 56` y los ceros restantes sin cambiar la memoria ni el estado de los registros. La captura debe mostrar el volcado posterior a la escritura, no una nueva operación de escritura.
 
 ### Decisión técnica 2 — Direccionamiento inmediato frente a directo a memoria
 
@@ -99,7 +99,7 @@ Las trazas siguientes parten de los valores cargados por el propio programa. En 
 
 ### Checkpoint 1 — Programa de suma
 
-El programa se ensambla en `0100`: `MOV AX,000A`, `MOV BX,0005`, `MOV CX,0003`, `ADD AX,BX`, `ADD AX,CX`, `INT 20`. Se verifica con `U 100 10E`, se coloca IP en `0100` con `R IP` y se ejecuta una instrucción por cada comando `T`.
+El programa se ensambla en `0100`: `MOV AX,000A`, `MOV BX,0005`, `MOV CX,0003`, `ADD AX,BX`, `ADD AX,CX`, `INT 20`. Se verifica con `U 100 10E`, se coloca IP en `0100` con `R IP` y se ejecuta una instrucción por cada comando `T`. FreeDOS DEBUG codificó las dos sumas como `01 D8` y `01 C8`; la guía muestra las formas equivalentes `03 C3` y `03 C1`. En ambos casos el resultado observable es el mismo.
 
 | # | Instrucción ejecutada | AX después | BX después | CX después | IP siguiente | CF/ZF/SF |
 |---:|---|---:|---:|---:|---:|---|
@@ -114,7 +114,7 @@ El resultado es `10 + 5 + 3 = 18 = 0012h`. Las dos sumas producen un resultado d
 
 ### Checkpoint 2 — Bucle LOOP
 
-Programa en `0100`: `MOV AX,0000`, `MOV CX,0004`, `ADD AX,0002`, `LOOP 0106`, `INT 20`. Los bytes de `LOOP` son `E2 FB`: la instrucción termina en `010B` y el desplazamiento relativo `FBh` es −5, que regresa a `0106`.
+Programa en `0100`: `MOV AX,0000`, `MOV CX,0004`, `ADD AX,0002`, `LOOP 0106`, `INT 20`. FreeDOS DEBUG codifica `ADD AX,0002` como `83 C0 02` y `LOOP` como `E2 FB`: la instrucción LOOP termina en `010B` y el desplazamiento relativo `FBh` es −5, que regresa a `0106`.
 
 | # | Instrucción ejecutada | Iteración | AX después | CX después | IP siguiente | ¿Salta? | CF/ZF/SF |
 |---:|---|---:|---:|---:|---:|---|---|
@@ -140,14 +140,14 @@ La guía contiene una inconsistencia: `D CS:100 L0C` solicita 12 bytes, aunque l
 |---|---|---|---:|
 | `0100` | `B8 00 00` | `MOV AX,0000` | 3 |
 | `0103` | `B9 04 00` | `MOV CX,0004` | 3 |
-| `0106` | `05 02 00` | `ADD AX,0002` | 3 |
+| `0106` | `83 C0 02` | `ADD AX,0002` | 3 |
 | `0109` | `E2 FB` | `LOOP 0106` | 2 |
 | `010B` | `CD 20` | `INT 20` | 2 |
 | **Total** |  |  | **13 bytes** |
 
 ### Checkpoint 3 — Bucle equivalente con DEC/JNZ
 
-Programa en `0200`: `MOV AX,0000`, `MOV CX,0004`, `ADD AX,0002`, `DEC CX`, `JNZ 0206`, `INT 20`. `DEC CX` ocupa un byte (`49`); `JNZ 0206` ocupa dos (`75 FA`), pues el desplazamiento relativo desde `020C` hasta `0206` es −6.
+Programa en `0200`: `MOV AX,0000`, `MOV CX,0004`, `ADD AX,0002`, `DEC CX`, `JNZ 0206`, `INT 20`. FreeDOS DEBUG codifica la suma como `83 C0 02`; `DEC CX` ocupa un byte (`49`) y `JNZ 0206` ocupa dos (`75 FA`), pues el desplazamiento relativo desde `020C` hasta `0206` es −6.
 
 | # | Instrucción ejecutada | Iteración | AX después | CX después | IP siguiente | ¿JNZ salta? | CF/ZF/SF |
 |---:|---|---:|---:|---:|---:|---|---|
@@ -179,7 +179,7 @@ Para cien iteraciones, `G` es más práctico que emitir `T` repetidamente porque
 
 ### Checkpoint 4 — Repositorio y entrega
 
-La carpeta local contiene este `README.md` y la lista de evidencia en [`capturas/README.md`](capturas/README.md). La guía pide que el repositorio de entrega se llame `apellido-post1-u3` y tenga al menos tres commits descriptivos por cada parte. La actividad está dentro de `TrabajosArqui`, por lo que todavía debe publicarse o copiarse al destino exacto que se comparta con el docente; no se ha creado ni publicado un repositorio independiente, no se han generado commits para aparentar ese historial y las capturas siguen pendientes. El cierre se completa después de agregar las siete imágenes reales, verificar que reflejen las salidas obtenidas y compartir el enlace en NPLAD UFPS.
+La carpeta local contiene este `README.md` y las doce capturas reales listadas en [`capturas/README.md`](capturas/README.md). La guía pide que el repositorio de entrega se llame `apellido-post1-u3` y tenga al menos tres commits descriptivos por cada parte. La actividad está dentro de `TrabajosArqui`, por lo que todavía debe publicarse o copiarse al destino exacto que se comparta con el docente; no se afirma que exista un repositorio independiente con aquel nombre ni se crean commits ficticios. Siguen pendientes los commits requeridos y compartir el enlace en NPLAD UFPS.
 
 ## Observaciones y conclusión
 
@@ -187,9 +187,9 @@ La carpeta local contiene este `README.md` y la lista de evidencia en [`capturas
 - `A` escribe instrucciones en memoria. `T` ejecuta una instrucción y permite observar los registros resultantes.
 - Los datos inmediatos de 16 bits aparecen en little-endian. Los saltos cortos usan un desplazamiento relativo con signo contado desde la instrucción siguiente.
 - `LOOP` decrementa CX sin cambiar las banderas; `DEC` sí actualiza ZF y `JNZ` usa ZF para decidir si salta.
-- El volcado completo del programa LOOP requiere `L0D`, no `L0C`, porque el código ocupa 13 bytes.
-- La evidencia gráfica se completa únicamente con capturas reales de DOSBox y DEBUG; los archivos requeridos y su estado se listan en [`capturas/README.md`](capturas/README.md).
+- El volcado completo del programa LOOP requiere 13 bytes (`0100`–`010C`), no 12; el ensamblador observado eligió `83 C0 02` para `ADD AX,0002`.
+- Las capturas reales documentan los comandos y resultados; los bucles largos se dividieron en varias imágenes para mantener legibles los estados de cada instrucción.
 
 ## Entrega en GitHub
 
-La guía académica solicita un repositorio llamado `apellido-post1-u3`, cuatro checkpoints por parte y seis commits como evidencia del proceso. Esta actividad está organizada dentro del repositorio de curso [TrabajosArqui](../../README.md); por tanto, no se afirma que exista un repositorio independiente con aquel nombre ni se crean commits ficticios. El README y las capturas reales pendientes deben incorporarse al destino de GitHub que se comparta con el docente.
+La guía académica solicita un repositorio llamado `apellido-post1-u3`, cuatro checkpoints por parte y seis commits como evidencia del proceso. Esta actividad está organizada dentro del repositorio de curso [TrabajosArqui](../../README.md); por tanto, no se afirma que exista un repositorio independiente con aquel nombre ni se crean commits ficticios. El README y las capturas reales están preparados localmente; el historial y la publicación en el destino de GitHub que se comparta con el docente aún deben realizarse.
