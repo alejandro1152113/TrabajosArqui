@@ -8,7 +8,7 @@
 **URL exacta del proyecto:** `https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7`  
 **Programa fuente de ejemplo:** [`src/post1.asm`](src/post1.asm) — `https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1.asm`
 
-> **Estado de validación:** los nueve programas se ensamblaron correctamente con NASM 2.16.03 y sus `.COM` están en `bin/`. DOSBox no está disponible en este entorno, así que la ejecución en el emulador y las capturas siguen pendientes. No se presentan ejecuciones ni evidencias ficticias.
+> **Estado de validación:** los nueve programas se ensamblaron correctamente con NASM 2.16.03 y sus `.COM` están en `bin/`. DOSBox 0.74-3 está instalado; las capturas y la comprobación visual de las salidas siguen pendientes. No se presentan ejecuciones ni evidencias ficticias.
 
 ## Contenido del repositorio
 
