@@ -1,0 +1,253 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 8 0 R /Annots [15 0 R 16 0 R] >>
+endobj
+8 0 obj
+<< /Length 5082 >>
+stream
+0.10 0.25 0.43 rg BT /F2 21 Tf 54 742.00 Td (Post-contenido ? Manejo de pantalla y teclado) Tj ET
+0.25 0.43 0.70 RG 1.2 w 54 718.75 m 558 718.75 l S
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 705.75 Td (Arquitectura de Computadores · Unidad 7 Estudiante: González López Repositorio: TrabajosArqui ?) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 692.15 Td (post7-u7 \(https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7\) PDF:) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 678.55 Td (Gonzalez Lopez_Post7_U7.pdf) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 664.95 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/Gonzalez%20Lopez_Pos) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 651.35 Td (t7_U7.pdf\)) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 631.75 Td (URL exacta del proyecto:) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 618.15 Td (https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7 Programa fuente de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 604.55 Td (ejemplo: src/post1.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 590.95 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1.asm\) ?) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 577.35 Td (https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1.asm) Tj ET
+0.25 0.25 0.25 rg BT /F3 9.6 Tf 66 557.75 Td (Estado de validación: los nueve programas se ensamblaron correctamente con NASM 2.16.03 y) Tj ET
+0.25 0.25 0.25 rg BT /F3 9.6 Tf 66 545.35 Td (sus .COM están en bin/. DOSBox no está disponible en este entorno, así que la ejecución en) Tj ET
+0.25 0.25 0.25 rg BT /F3 9.6 Tf 66 532.95 Td (el emulador y las capturas siguen pendientes. No se presentan ejecuciones ni evidencias) Tj ET
+0.25 0.25 0.25 rg BT /F3 9.6 Tf 66 520.55 Td (ficticias.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 493.15 Td (Contenido del repositorio) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 467.40 Td (Ÿ src/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 454.20 Td (\(https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7/src/\):) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 441.00 Td (nueve fuentes ensamblador de 16 bits.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 427.80 Td (Ÿ build.bat) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 414.60 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/build.bat\):) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 401.40 Td (compila los nueve programas con NASM instalado en el PATH de Windows.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 388.20 Td (Ÿ bin/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 375.00 Td (\(https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7/bin/\):) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 361.80 Td (nueve archivos .COM generados desde los fuentes NASM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 348.60 Td (Ÿ capturas/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 335.40 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/capturas/RE) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 322.20 Td (ADME.md\): lista de evidencias que deben obtenerse en DOSBox.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 309.00 Td (Ÿ PDF de esta documentación enlazado al inicio.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 283.80 Td (Entorno y compilación) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 258.05 Td (Los programas son archivos .COM de 16 bits en modo real. Cada fuente usa BITS 16, ORG 100h,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 244.45 Td (registros de 16 bits y etiquetas de datos dentro del mismo segmento; no usa directivas de objeto) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 230.85 Td (ELF ni segmentos .data/.text de un ejecutable protegido.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 211.25 Td (Requisitos de ejecución: DOSBox 0.74 o superior y NASM accesible desde DOSBox. El NASM instalado en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 197.65 Td (Windows puede ensamblar los archivos desde el host, pero no sustituye al ejecutable DOS que la guía) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 184.05 Td (del curso pide verificar dentro de DOSBox.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 164.45 Td (Desde PowerShell, en esta carpeta, se puede recompilar en Windows con:) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 142.85 Td (.\\build.bat) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 123.45 Td (Para compilar dentro de DOSBox, montar esta carpeta como unidad C, entrar en C:\\ y ejecutar:) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 101.85 Td (nasm -f bin src\\post1.asm -o bin\\post1.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 91.45 Td (nasm -f bin src\\post1b.asm -o bin\\post1b.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 81.05 Td (nasm -f bin src\\post1c.asm -o bin\\post1c.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 70.65 Td (nasm -f bin src\\post1d.asm -o bin\\post1d.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 60.25 Td (nasm -f bin src\\post2a.asm -o bin\\post2a.com) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 1 de 4) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 6017 >>
+stream
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 744.00 Td (nasm -f bin src\\post2b.asm -o bin\\post2b.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 733.60 Td (nasm -f bin src\\post2c.asm -o bin\\post2c.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 723.20 Td (nasm -f bin src\\post2d.asm -o bin\\post2d.com) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 712.80 Td (nasm -f bin src\\post2e.asm -o bin\\post2e.com) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 693.40 Td (La compilación de esta entrega se realizó con NASM 2.16.03 para Win64. Para ejecutar y verificar) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 679.80 Td (cada archivo bin\\post*.com, montar la carpeta en DOSBox y adaptar la ruta al lugar donde esté el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 666.20 Td (repositorio:) Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 644.60 Td (mount c "C:\\ruta\\al\\repositorio\\unidad-7\\post7-u7") Tj ET
+0.16 0.18 0.22 rg BT /F4 8.2 Tf 62 634.20 Td (c:) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 606.80 Td (Parte 1 ? INT 21h e INT 10h) Tj ET
+0.10 0.25 0.43 rg BT /F2 9.2 Tf 54 581.05 Td (Programa | Interrupciones y propósito | Resultado esperado) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 569.05 Td (post1.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 557.55 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1.asm\) | INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 546.05 Td (21h/AH=09h imprime cadenas $-terminadas; AH=4Ch finaliza el proceso. | Muestra las tres líneas del) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 534.55 Td (encabezado.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 523.05 Td (post1b.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 511.55 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1b.asm\) | INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 500.05 Td (10h/AH=06h limpia la pantalla; AH=02h posiciona el cursor; AH=09h escribe un carácter y su atributo.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 488.55 Td (| Muestra A amarillo sobre azul y U7 rojo claro sobre negro.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 477.05 Td (post1c.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 465.55 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1c.asm\) |) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 454.05 Td (Recorre una cadena y combina INT 10h/AH=02h con AH=09h para escribir carácter a carácter. | Muestra) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 442.55 Td (el título en verde brillante desde la fila 5, columna 25.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 431.05 Td (post1d.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 419.55 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1d.asm\) | INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 408.05 Td (10h/AH=0Fh consulta modo, columnas y página; AH=08h relee carácter y atributo. | Informa si modo 03h) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 396.55 Td (y 80 columnas están activos, escribe Z y confirma la relectura de Z/2Fh.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 377.05 Td (INT 21h/AH=09h escribe a la salida estándar y, en DOS 2+, esta puede estar redirigida; la cadena) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 363.45 Td (termina en $. INT 10h/AH=09h es otra función distinta: escribe un carácter con atributo en la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 349.85 Td (página seleccionada y no avanza el cursor. INT 10h/AH=02h coloca el cursor; por eso la rutina de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 336.25 Td (cadena lo reposiciona para cada carácter. INT 10h/AH=0Fh devuelve el modo actual en AL, las) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 322.65 Td (columnas en AH y la página activa en BH. INT 10h/AH=08h devuelve el carácter en AL y el atributo en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 309.05 Td (AH en la posición actual del cursor.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 281.45 Td (Parte 2 ? INT 16h y acceso directo a B800h) Tj ET
+0.10 0.25 0.43 rg BT /F2 9.2 Tf 54 255.70 Td (Programa | Técnica | Resultado esperado) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 243.70 Td (post2a.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 232.20 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post2a.asm\) | INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 220.70 Td (16h/AH=00h espera una tecla y entrega scan code en AH y ASCII en AL; la salida hexadecimal usa INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 209.20 Td (21h/AH=02h. | Presenta ambos códigos por tecla; Escape termina.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 197.70 Td (post2b.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 186.20 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post2b.asm\) |) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 174.70 Td (Escribe pares carácter/atributo directamente en ES:B800h usando un offset calculado. | Muestra H, O,) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 163.20 Td (L y A en cuatro filas y colores distintos.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 151.70 Td (post2c.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 140.20 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post2c.asm\) | REP) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 128.70 Td (STOSW llena 2000 celdas; después escribe una cadena en el buffer de video. | Limpia el modo texto) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 117.20 Td (con fondo azul y muestra un mensaje en la fila 12.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 105.70 Td (post2d.asm) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 94.20 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post2d.asm\) |) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 82.70 Td (Editor de una línea con INT 16h/AH=00h y escritura directa en B800h. | Escribe caracteres) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 71.20 Td (imprimibles en la fila 12; Backspace borra y Enter termina.) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 59.70 Td (post2e.asm) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 2 de 4) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 6417 >>
+stream
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 744.00 Td (\(https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post2e.asm\) | INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 732.50 Td (16h/AH=02h consulta los flags; AH=01h comprueba si hay una tecla sin bloquear. | Los indicadores) Tj ET
+0.12 0.14 0.18 rg BT /F1 9 Tf 54 721.00 Td (Shift/Ctrl se actualizan en pantalla; Escape termina.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 701.50 Td (En modo texto color 80×25, cada celda ocupa dos bytes: ASCII y atributo. Para fila r y columna c,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 687.90 Td (el offset en bytes es \(r × 80 + c\) × 2; el carácter está en offset y el atributo en offset+1. Por) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 674.30 Td (ejemplo, fila 12/columna 40 produce 07D0h. El atributo 0Ah representa texto verde brillante sobre) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 660.70 Td (fondo negro; 1Eh, texto amarillo sobre fondo azul; y 2Fh, texto blanco brillante sobre fondo verde.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 647.10 Td (En el byte de atributo, los cuatro bits bajos determinan el color del texto y los bits 4?6 el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 633.50 Td (fondo; el bit 7 puede representar parpadeo o intensidad de fondo según la configuración.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 613.90 Td (INT 16h/AH=02h devuelve en AL el byte de estado mantenido por el BIOS. Los bits 0 y 1 representan) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 600.30 Td (Shift derecho e izquierdo; el bit 2 representa Ctrl. El programa post2e.asm sondea este estado sin) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 586.70 Td (bloquear, y usa AH=01h/AH=00h únicamente para detectar y consumir Escape.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 559.10 Td (Decisiones técnicas) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 528.35 Td (1. ¿INT 21h o INT 10h para una salida de textoŸ) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 506.35 Td (Para texto plano que solo debe aparecer en la salida estándar, post1.asm usa INT 21h/AH=09h: DOS) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 492.75 Td (procesa una cadena completa y la escritura puede seguir la redirección de STDOUT disponible desde) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 479.15 Td (DOS 2. Esa función no recibe un atributo de color ni una coordenada, por lo que no basta para los) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 465.55 Td (ejemplos que deben pintar caracteres en ubicaciones exactas. En post1b.asm y post1c.asm, INT) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 451.95 Td (10h/AH=02h y AH=09h son necesarios para controlar la posición y el atributo de video. La ruta BIOS) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 438.35 Td (requiere más instrucciones cuando se recorre carácter por carácter, pero ofrece control directo de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 424.75 Td (la presentación. El programa no debe confundir las dos funciones AH=09h: la de INT 21h imprime una) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 411.15 Td (cadena $-terminada; la de INT 10h escribe un carácter con atributo y cantidad. La selección depende) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 397.55 Td (del contrato requerido: redirección y texto simple favorecen DOS; posición y color favorecen BIOS.) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 372.95 Td (2. ¿Por qué consultar AH=0Fh y releer con AH=08hŸ) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 350.95 Td (Asumir el modo 03h puede producir resultados erróneos si el programa se ejecuta con otro modo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 337.35 Td (activo: las dimensiones, las páginas disponibles y el significado de los atributos pueden cambiar.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 323.75 Td (INT 10h/AH=0Fh permite consultar el modo, el ancho de fila y la página activa antes de usar la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 310.15 Td (convención esperada. post1d.asm informa si no encuentra modo 03h con 80 columnas, pero continúa) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 296.55 Td (para que la relectura también pueda observarse; el adaptador y la página de prueba siguen siendo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 282.95 Td (una precondición del ejemplo. Después de escribir Z con atributo 2Fh, AH=08h permite comprobar los) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 269.35 Td (bytes que el BIOS devuelve para la celda del cursor. Esta lectura detecta una discrepancia antes de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 255.75 Td (que el programa dé por válida la actualización. Un editor de pantalla o una rutina de interfaz) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 242.15 Td (puede aplicar esa verificación al mantener sincronizado su modelo interno con el contenido visible.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 228.55 Td (Frente a eso, leer B800h directamente es rápido, pero ata el código a un modo y formato concretos.) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 203.95 Td (3. ¿INT 16h bloqueante o lectura directa del puerto 60hŸ) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 181.95 Td (INT 16h/AH=00h es apropiada cuando el programa espera una tecla y puede detenerse hasta que llegue;) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 168.35 Td (así funciona post2a.asm y así recibe el editor su siguiente carácter. En cambio, post2e.asm debe) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 154.75 Td (actualizar continuamente los indicadores de Shift y Ctrl aunque no haya pulsaciones. Si usara) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 141.15 Td (AH=00h en el bucle, se bloquearía hasta la siguiente tecla y dejaría de reflejar cambios del estado) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 127.55 Td (durante esa espera. Leer el puerto 60h directamente puede evitar parte del trabajo del BIOS y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 113.95 Td (entregar acceso de bajo nivel al controlador, pero obliga a gestionar el ciclo completo del) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 100.35 Td (controlador y las interrupciones, interpretar make/break, tratar teclas extendidas y considerar el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 86.75 Td (conjunto de scan codes. Una lectura aislada del puerto no equivale a una interfaz de teclado) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 73.15 Td (completa. Para este laboratorio, INT 16h ofrece la abstracción correcta y mantiene el ejemplo) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 3 de 4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 3474 >>
+stream
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 744.00 Td (compatible con DOSBox. El acceso directo es pertinente al desarrollar un sistema operativo o un) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 730.40 Td (controlador propio que no delegue el teclado en el BIOS.) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 705.80 Td (4. ¿AH=02h o seguimiento manual de make/breakŸ) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 683.80 Td (Para mostrar el estado actual de Shift y Ctrl, INT 16h/AH=02h es más simple que mantener variables) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 670.20 Td (propias actualizadas a partir de cada evento. El BIOS conserva los bits de estado al procesar las) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 656.60 Td (interrupciones del teclado, y devuelve juntos Shift izquierdo/derecho y Ctrl. Un seguimiento manual) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 643.00 Td (debe reconocer cada make y su break, además de gestionar códigos extendidos y el orden de eventos.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 629.40 Td (Si el programa no consume a tiempo el código de liberación, puede conservar un estado obsoleto y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 615.80 Td (mostrar una tecla modificadora como si siguiera presionada. Consultar AH=02h evita que la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 602.20 Td (aplicación sea responsable de reconstruir ese estado a partir de eventos perdidos; también permite) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 588.60 Td (distinguir Shift izquierdo del derecho mediante los bits 1 y 0. El seguimiento manual conviene) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 575.00 Td (cuando se necesitan eventos de transición y su instante exacto, o cuando el programa controla por) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 561.40 Td (sí mismo el manejador de teclado. Para el objetivo del laboratorio ?reflejar el estado actual?) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 547.80 Td (AH=02h es la elección más directa.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 520.20 Td (Validación y evidencias) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 494.45 Td (Los nueve fuentes deben ensamblarse con NASM sin errores y ejecutarse individualmente en DOSBox. La) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 480.85 Td (guía exige capturas de los checkpoints de compilación y ejecución; deben agregarse a capturas/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 467.25 Td (después de realizarlos. En esta entrega no se afirma que se haya comprobado el funcionamiento en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 453.65 Td (DOSBox, porque esas herramientas no están instaladas en este entorno.) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 426.05 Td (Referencias técnicas) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 400.30 Td (Ÿ Brown, R. \(2000\). Ralf Brown's Interrupt List \(Release 61\). https://fd.lod.bz/rbil/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 387.10 Td (Ÿ IBM. \(1981\). IBM Personal Computer technical reference. IBM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 373.90 Td (Ÿ IBM. \(1987\). Video Graphics Array technical reference. IBM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 360.70 Td (Ÿ Microsoft. \(1986\). MS-DOS programmer's reference. Microsoft Press.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 347.50 Td (Ÿ Schulman, A., Brown, R., Maxey, D., Michels, R. J., & Kyle, J. C. \(1990\). Undocumented) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.2 Tf 62 334.30 Td (DOS. Addison-Wesley.) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 4 de 4) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Annot /Subtype /Link /Rect [52 688.15 560 704.15] /Border [0 0 0] /A << /S /URI /URI (https://github.com/alejandro1152113/TrabajosArqui/tree/main/unidad-7/post7-u7) >> >>
+endobj
+16 0 obj
+<< /Type /Annot /Subtype /Link /Rect [52 586.95 560 602.95] /Border [0 0 0] /A << /S /URI /URI (https://github.com/alejandro1152113/TrabajosArqui/blob/main/unidad-7/post7-u7/src/post1.asm) >> >>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000141 00000 n 
+0000000238 00000 n 
+0000000340 00000 n 
+0000000445 00000 n 
+0000000540 00000 n 
+0000000720 00000 n 
+0000005853 00000 n 
+0000006010 00000 n 
+0000012079 00000 n 
+0000012237 00000 n 
+0000018706 00000 n 
+0000018864 00000 n 
+0000022390 00000 n 
+0000022587 00000 n 
+trailer
+<< /Size 17 /Root 1 0 R >>
+startxref
+22798
+%%EOF

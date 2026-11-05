@@ -1,0 +1,213 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 5911 >>
+stream
+0.10 0.25 0.43 rg BT /F2 21 Tf 54 742.00 Td (Pre-contenido ? Manejo de pantalla y teclado) Tj ET
+0.25 0.43 0.70 RG 1.2 w 54 718.75 m 558 718.75 l S
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 705.75 Td (Arquitectura de Computadores · Unidad 7 Estudiante: González López Entrega: Pre7-U7) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 678.15 Td (Parte 1 ? Interrupciones de software y el BIOS) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 647.40 Td (Pregunta 1 ? Predicción de consecuencias) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 625.40 Td (Al instalar el TSR, la nueva rutina queda como destino de INT 09h, la interrupción de hardware) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 611.80 Td (asociada con IRQ1. Si la rutina consume la interrupción y retorna sin encadenar el manejador) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 598.20 Td (anterior ni enviar su propio EOI, el trabajo normal del BIOS no ocurre: no se lee el código) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 584.60 Td (pendiente del puerto 60h para actualizar el buffer circular de teclas y el PIC 8259 conserva IRQ1) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 571.00 Td (en estado de servicio. Mientras esa condición persista, el controlador puede retener o acumular) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 557.40 Td (datos y el PIC no volverá a atender IRQ1 de la forma esperada. Por tanto, las aplicaciones que) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 543.80 Td (consultan el buffer mediante INT 16h dejarán de recibir nuevas pulsaciones; no necesariamente se) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 530.20 Td (detendrán el reloj ni todas las interrupciones del sistema, porque IRQ0 tiene mayor prioridad. La) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 516.60 Td (consecuencia observable más probable es un teclado que deja de responder, posiblemente después de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 503.00 Td (una sola pulsación. Si el vector quedó reemplazado por un TSR residente, reiniciar puede ser la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 489.40 Td (única recuperación práctica.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 469.80 Td (El caso de un hook de INT 21h es distinto: esa es una interrupción de software invocada por una) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 456.20 Td (aplicación, no una IRQ del PIC. Omitir el encadenamiento puede dejar sin servicio la función) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 442.60 Td (interceptada o alterar su resultado, pero no deja IRQ1 en servicio ni impide por sí mismo que el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 429.00 Td (BIOS procese el teclado. El fallo afecta llamadas DOS que pasan por ese hook, no el mecanismo de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 415.40 Td (interrupción de hardware del teclado. Esta diferencia se desprende de separar la cadena de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 401.80 Td (interrupciones de software de la atención de IRQ1 por el BIOS y el PIC \(IBM, 1981; Brown, 2000;) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 388.20 Td (Schulman et al., 1990\).) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 363.60 Td (Pregunta 2 ? Toma de decisión con justificación) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 341.60 Td (Para registrar escrituras DOS dirigidas a la salida estándar, se elegiría interceptar y encadenar) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 328.00 Td (INT 21h/AH=40h. En DOS 2 y posteriores, los procesos reciben handles estándar; el handle 1) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 314.40 Td (representa STDOUT y DOS puede asociarlo con la pantalla o con un archivo redirigido. La función 40h) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 300.80 Td (incluye el handle, la dirección del búfer y la longitud, por lo que permite identificar una) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 287.20 Td (escritura por handle y conservar los bytes exactos. El mecanismo respeta mejor la redirección: si) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 273.60 Td (la salida está dirigida a un archivo, el registro observa la misma operación lógica del proceso, en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 260.00 Td (vez de forzarla a la pantalla. INT 10h, en cambio, observa las operaciones que llegan al BIOS de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 246.40 Td (video, incluso algunas emitidas directamente por una aplicación, pero no las que DOS redirige a un) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 232.80 Td (archivo ni las escrituras directas a B800h.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 213.20 Td (Ninguna ruta cubre todo el software. Una aplicación que escribe a B800h evita ambas interrupciones;) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 199.60 Td (una que usa INT 10h evita la intercepción de INT 21h; y una que escribe a un handle distinto de 1) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 186.00 Td (no sería capturada por el filtro propuesto. Aun así, INT 21h/AH=40h es la opción más coherente para) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 172.40 Td (aplicaciones DOS que respetan la interfaz del sistema y la redirección. El TSR debe encadenar la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 158.80 Td (llamada original y evitar invocar servicios DOS de archivo mientras DOS ya está ocupado; puede) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 145.20 Td (almacenar temporalmente los datos y escribirlos en un momento seguro. La semántica de la función y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 131.60 Td (el soporte de redirección están descritos por la documentación de DOS y la lista técnica de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 118.00 Td (interrupciones \(Microsoft, 1986; Brown, 2000; Schulman et al., 1990\).) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 93.40 Td (Pregunta 3 ? Síntesis) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 71.40 Td (Una calculadora residente puede combinar los tres mecanismos porque cada uno resuelve una necesidad) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 1 de 4) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 6345 >>
+stream
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 744.00 Td (distinta. El TSR instala un hook de INT 09h para reconocer la combinación de activación mientras) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 730.40 Td (otro programa está en primer plano. La rutina debe preservar los registros y el estado que utiliza,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 716.80 Td (actualizar una bandera de activación y mantener el procesamiento normal encadenando el manejador) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 703.20 Td (que estaba instalado antes; si no lo hace, puede interrumpir la lectura ordinaria del teclado. La) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 689.60 Td (lógica extensa de la calculadora no debería ejecutarse directamente en el contexto de la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 676.00 Td (interrupción.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 656.40 Td (Cuando llega un momento seguro para mostrar la calculadora, el programa puede guardar las celdas) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 642.80 Td (que va a cubrir, dibujar su ventana escribiendo caracteres y atributos directamente en B800h, y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 629.20 Td (restaurar la pantalla al cerrarse. La escritura directa facilita una actualización localizada y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 615.60 Td (rápida, aunque supone modo texto y compatibilidad con el adaptador. Por último, INT 21h/AH=40h) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 602.00 Td (escribe los resultados en un handle. Si se usa STDOUT \(handle 1\), DOS puede redirigirlo; si se abre) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 588.40 Td (un archivo de log específico, el handle apunta a ese archivo y la redirección de STDOUT no cambia) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 574.80 Td (por sí sola el destino.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 555.20 Td (Con solo el hook de INT 09h, la utilidad podría detectar la combinación, pero no tendría una) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 541.60 Td (interfaz visual ni un mecanismo de persistencia del historial. Los tres recursos, por tanto, no son) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 528.00 Td (intercambiables: el hook detecta el evento, B800h dibuja y restaura la ventana, y los handles de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 514.40 Td (DOS gestionan la salida. Esta separación coincide con el modelo documentado de interrupciones,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 500.80 Td (video y archivos en DOS \(IBM, 1981; Microsoft, 1986; Schulman et al., 1990\).) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 473.20 Td (Parte 2 ? Modo texto y memoria de video) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 442.45 Td (Pregunta 1 ? Análisis comparativo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 420.45 Td (En un adaptador CGA original, el procesador y el controlador CRT \(CRTC\) comparten el acceso a la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 406.85 Td (memoria de video durante el barrido de pantalla. Una escritura directa a B800h en el momento de una) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 393.25 Td (lectura del CRTC puede producir el efecto visible conocido como snow. Para evitarlo, un programa) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 379.65 Td (histórico podía sincronizar las escrituras con el período de retrazo consultando el registro de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 366.05 Td (estado en el puerto 3DAh; el bit 0 indica que el despliegue no está activo. Esa espera exige sondeo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 352.45 Td (y añade latencia: cada actualización debe esperar una ventana segura, que no siempre basta para) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 338.85 Td (escribir una pantalla completa.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 319.25 Td (Los adaptadores EGA/VGA implementaron un acceso a memoria de video que evita el artefacto CGA,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 305.65 Td (mediante mecanismos internos de almacenamiento y arbitraje; no es correcto concluir que el antiguo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 292.05 Td (problema se resolvía solo haciendo el código más rápido. En el VGA emulado por DOSBox, el programa) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 278.45 Td (de laboratorio puede escribir directamente en B800h sin implementar la espera de CGA. Si el mismo) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 264.85 Td (código sin sincronización se ejecutara hipotéticamente en un CGA, las escrituras coincidentes con) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 251.25 Td (el barrido podrían producir nieve; la frecuencia y visibilidad dependerían del momento y del) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 237.65 Td (hardware, no significan que cada escritura necesariamente falle.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 218.05 Td (La comparación muestra que una dirección de memoria mapeada no describe por sí sola el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 204.45 Td (comportamiento temporal del periférico. El diseño del adaptador, la contención del bus y la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 190.85 Td (temporización de la pantalla también importan. La documentación técnica de IBM para CGA y la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 177.25 Td (literatura de arquitectura de PC describen esta limitación y la evolución posterior del subsistema) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 163.65 Td (de video \(IBM, 1983; IBM, 1987; Mueller, 2002\).) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 139.05 Td (Pregunta 2 ? Investigación de casos) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 117.05 Td (El page flipping separa la página visible de la página en la que se dibuja el siguiente cuadro. En) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 103.45 Td (modo texto color, cada celda ocupa dos bytes y una pantalla de 80×25 usa 4000 bytes. Una página de) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 89.85 Td (4 KiB comienza cada 1000h bytes dentro de B800h. Mientras la página 0 continúa visible, el programa) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 76.25 Td (puede preparar la página 1 y luego seleccionar esta última con INT 10h/AH=05h. El BIOS actualiza la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 62.65 Td (página activa y el punto de inicio de lectura del CRTC; así, la presentación cambia sin copiar las) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 2 de 4) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 5892 >>
+stream
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 744.00 Td (4000 celdas. La dirección del CRTC se expresa en unidades de celda/palabra en modo texto: el inicio) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 730.40 Td (de la segunda página corresponde a 0800h unidades de palabra, aunque su desplazamiento de bytes en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 716.80 Td (B800h sea 1000h.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 697.20 Td (La función BIOS es simple y portable dentro de los modos compatibles, pero puede introducir) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 683.60 Td (latencia. Un programa que programa directamente los registros de índice/datos 0Ch/0Dh del CRTC en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 670.00 Td (3D4h/3D5h evita esa llamada y puede sincronizar el cambio con el retrazo vertical leyendo el bit 3) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 656.40 Td (de 3DAh. A cambio, asume el adaptador, sus registros y su modo de video, y debe gestionar la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 642.80 Td (sincronización correctamente. En 32 KiB de memoria de video, ocho páginas de 4 KiB consumen toda la) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 629.20 Td (región; no queda espacio para una novena página ni para una segunda copia completa de cada una.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 609.60 Td (Microsoft QuickBASIC documenta el principio en software DOS: su instrucción SCREEN permite fijar) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 596.00 Td (página activa y visible para dibujar fuera de pantalla y luego mostrar la imagen, evitando) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 582.40 Td (parpadeo. El ejemplo corresponde a modos gráficos, no prueba que una aplicación almacenara dos) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 568.80 Td (pantallas de texto en B800h. La distinción evita confundir el cambio de página general con el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 555.20 Td (formato del modo texto \(Microsoft, 1990; IBM, 1987; Brown, 2000\).) Tj ET
+0.18 0.31 0.52 rg BT /F2 12 Tf 54 530.60 Td (Pregunta 3 ? Reflexión crítica) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 508.60 Td (La analogía entre el registro de dirección de inicio del CRTC y el page flip moderno es válida en) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 495.00 Td (el principio, no en todos los detalles. En ambos casos se dibuja en un recurso que no se está) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 481.40 Td (mostrando y se cambia qué recurso consume el dispositivo de salida. Si el cambio ocurre en el) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 467.80 Td (momento apropiado del refresco, se evita mostrar una imagen compuesta por partes de dos cuadros. El) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 454.20 Td (inicio de página del CRTC permite hacer ese cambio en una pantalla de texto con una actualización) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 440.60 Td (pequeña del estado del adaptador, sin copiar carácter por carácter el contenido preparado.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 421.00 Td (La escala moderna es muy distinta: un búfer gráfico puede contener millones de píxeles y varios) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 407.40 Td (formatos; una cadena de presentación administra varios buffers, sincronización entre CPU y GPU,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 393.80 Td (colas, fences y la composición del escritorio. APIs como Vulkan hacen explícita la adquisición y) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 380.20 Td (presentación de imágenes de una swapchain, mientras que B800h ofrece páginas de memoria de tamaño) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 366.60 Td (fijo y un mecanismo de hardware mucho más sencillo. Además, un cambio de puntero no garantiza por) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 353.00 Td (sí solo baja latencia: importan el instante de presentación y la cola de cuadros pendientes.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 333.40 Td (Estudiar B800h sí aporta una base conceptual útil. Permite distinguir dibujar del presentar,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 319.80 Td (comprender por qué copiar no es siempre necesario y razonar sobre tearing cuando la pantalla lee un) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 306.20 Td (buffer durante una actualización. La analogía también enseña sus límites: sincronizar el cambio con) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 292.60 Td (el retrazo no equivale a controlar todas las colas de una GPU moderna. La documentación de IBM,) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 279.00 Td (Microsoft y Khronos permite comparar el mecanismo histórico con las interfaces actuales \(IBM, 1987;) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 265.40 Td (Microsoft, 2024; Khronos Group, 2024\).) Tj ET
+0.10 0.25 0.43 rg BT /F2 15 Tf 54 237.80 Td (Referencias) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 212.05 Td (Brown, R. \(2000\). Ralf Brown's Interrupt List \(Release 61\). https://fd.lod.bz/rbil/) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 192.45 Td (IBM. \(1981\). IBM Personal Computer technical reference. IBM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 172.85 Td (IBM. \(1983\). Color/Graphics Monitor Adapter technical reference. IBM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 153.25 Td (IBM. \(1987\). Video Graphics Array technical reference. IBM.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 133.65 Td (Khronos Group. \(2024\). Vulkan 1.3 specification: Window system integration.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 120.05 Td (https://registry.khronos.org/vulkan/specs/1.3-extensions/html/chap34.html) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 100.45 Td (Microsoft. \(1986\). MS-DOS programmer's reference. Microsoft Press.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 80.85 Td (Microsoft. \(1990\). Microsoft QuickBASIC 4.5: Basic language reference. Microsoft Corporation.) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 3 de 4) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 709 >>
+stream
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 744.00 Td (Microsoft. \(2024\). Flip model. Microsoft Learn.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 730.40 Td (https://learn.microsoft.com/en-us/windows/win32/direct3ddxgi/dxgi-flip-model) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 710.80 Td (Mueller, S. \(2002\). Upgrading and repairing PCs \(14th ed.\). Que.) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 691.20 Td (Schulman, A., Brown, R., Maxey, D., Michels, R. J., & Kyle, J. C. \(1990\). Undocumented DOS: A) Tj ET
+0.12 0.14 0.18 rg BT /F1 10.3 Tf 54 677.60 Td (programmer's guide to reserved MS-DOS functions and data structures. Addison-Wesley.) Tj ET
+0.35 0.35 0.35 rg BT /F1 8 Tf 286 26 Td (Pagina 4 de 4) Tj ET
+endstream
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000141 00000 n 
+0000000238 00000 n 
+0000000340 00000 n 
+0000000445 00000 n 
+0000000540 00000 n 
+0000000696 00000 n 
+0000006658 00000 n 
+0000006815 00000 n 
+0000013212 00000 n 
+0000013370 00000 n 
+0000019314 00000 n 
+0000019472 00000 n 
+trailer
+<< /Size 15 /Root 1 0 R >>
+startxref
+20232
+%%EOF
