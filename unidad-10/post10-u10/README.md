@@ -74,4 +74,4 @@ Con `MAP_POPULATE`, el kernel prepara todas las páginas físicas durante la lla
 
 ## Capturas y validación
 
-Las capturas auténticas se deben colocar en `capturas/`. Los resultados deben obtenerse en Linux y no pueden reemplazarse con valores sintéticos.
+La ejecución real en WSL/Ubuntu quedó registrada en [`capturas/evidencia-linux.png`](capturas/evidencia-linux.png). Los resultados se obtuvieron ejecutando los binarios compilados y no fueron reemplazados por valores sintéticos.
