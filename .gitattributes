@@ -1,0 +1,12 @@
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.com -text
+*.ASM text eol=crlf
+*.asm text eol=crlf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.c text eol=lf
+*.cu text eol=lf
+*.py text eol=lf

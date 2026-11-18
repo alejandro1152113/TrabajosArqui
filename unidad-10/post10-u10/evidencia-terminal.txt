@@ -1,0 +1,40 @@
+Unidad 10 - Evidencia textual real obtenida en Ubuntu/WSL2
+
+Cache detectada:
+L1d: 32K
+L2: 512K
+L3: 4096K
+
+cache_bench
+Array KiB     Sec ns/byte Rand ns/acceso
+4                   1.558        2.358
+8                   1.652        2.245
+16                  1.806        2.679
+32                  1.851        2.091
+64                  1.909        2.102
+128                 1.732        2.592
+256                 1.653        2.525
+512                 1.601        3.780
+1024                2.143        3.994
+4096                1.498       21.166
+16384               1.516       27.261
+65536               1.417       30.331
+
+Stride          ns/acceso
+64 B                4.354
+4096 B              6.863
+
+pagefault_demo
+Antes de tocar la memoria:
+VmPeak: 105172 kB
+VmSize: 105172 kB
+VmRSS: 1760 kB
+
+Despues de escribir 100 MB:
+VmRSS: 104160 kB
+Minor (reclaiming a frame) page faults: 25676
+
+mmap_fault_cost
+Costo promedio primer toque (con fault): 3344.1 ns
+Costo promedio segundo toque (sin fault): 32.9 ns
+Overhead atribuible al page fault: 3311.2 ns
